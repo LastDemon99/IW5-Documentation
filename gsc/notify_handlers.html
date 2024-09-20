@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notify Handlers &mdash; IW5 Documentation IW5 Documentation documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+
+  
+    <link rel="canonical" href="https://lastdemon99.github.io/IW5-Documentation/gsc/notify_handlers.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=05596813"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=f281be69"></script>
+        <script src="../_static/script.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Template" href="template.html" />
+    <link rel="prev" title="Include Directive" href="preprocessor_directives.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IW5 Documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index_gsc.html">GSC</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="how_to_start.html">How to start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="comments.html">Comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables.html">Variable Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables.html#variable-declaration">Variable Declaration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables.html#variable-scopes">Variable Scopes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables.html#persistent-variable">Persistent Variable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_operators.html">Math operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_operators.html#increment-decrement">Increment &amp; decrement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conditionals.html">Logical Operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conditionals.html#if-statements">If Statements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conditionals.html#switch">Switch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loops.html">Loops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions.html">Declaring Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions.html#calling-functions">Calling Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preprocessor_directives.html">Include Directive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preprocessor_directives.html#define-directive">Define Directive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preprocessor_directives.html#undef-directive">Undef Directive</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Notify Handlers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="template.html">Template</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../index_modding.html">Modding</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Support:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index_support.html">Contact us</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IW5 Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index_gsc.html">GSC</a></li>
+      <li class="breadcrumb-item active">Notify Handlers</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/gsc/notify_handlers.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="notify-handlers">
+<h1>Notify Handlers<a class="headerlink" href="#notify-handlers" title="Link to this heading"></a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">notify</span></code>, <code class="docutils literal notranslate"><span class="pre">endon</span></code>, and <code class="docutils literal notranslate"><span class="pre">waittill</span></code> are used together to monitor and handle events, notify, interrumpt or wait for specific actions to occur. These triggers must be associated with either the level or an entity to be called from different parts of the script or across different scripts.</p>
+<ul class="simple">
+<li><p><strong>Notify:</strong> It is used to notify a specific event so that it can be detected by other parts of the code that are waiting for it. As the first argument, a string will be assigned that will serve as a key to identify it.</p></li>
+</ul>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">level</span><span class="w"> </span><span class="n">Notify</span><span class="p">(</span><span class="s">&quot;game_ended&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>If necessary, we can also pass additional parameter.</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">self</span><span class="w"> </span><span class="n">Notify</span><span class="p">(</span><span class="s">&quot;damage&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="n">attacker</span><span class="p">);</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Endon:</strong> Used to interrupt the execution of the function block in case the specified event is notified.</p></li>
+</ul>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">level</span><span class="w"> </span><span class="n">endon</span><span class="p">(</span><span class="s">&quot;game_ended&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">//If level are notified of a &quot;game_ended&quot;, the entire block will be interrupted</span>
+
+<span class="k">for</span><span class="p">(;;)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">iprintln</span><span class="p">(</span><span class="s">&quot;test&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">wait</span><span class="w"> </span><span class="mf">0.5</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Waittill:</strong> is used to wait for the notification, so <code class="docutils literal notranslate"><span class="pre">waittill</span></code> will pause the script until the notification occurs. In order not to interrupt the entire execution of the script, remember to call with thread the function that has a waittill within its scope</p></li>
+</ul>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">self</span><span class="w"> </span><span class="n">waittill</span><span class="p">(</span><span class="s">&quot;spawned_player&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">//The entity in this case player waits &quot;spawned_player&quot; notify</span>
+<span class="n">self</span><span class="w"> </span><span class="n">iprintln</span><span class="p">(</span><span class="s">&quot;You are spawned&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">//If the entity is notified it will allow the continuation of this line</span>
+</pre></div>
+</div>
+<p>Remember that <code class="docutils literal notranslate"><span class="pre">notify</span></code> can send multiple parameters, so <code class="docutils literal notranslate"><span class="pre">waittill</span></code> can receive them</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">level</span><span class="w"> </span><span class="n">waittill</span><span class="p">(</span><span class="s">&quot;connected&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">player</span><span class="p">);</span><span class="w"> </span><span class="c1">//We wait for the notify and receive the player parameter.</span>
+<span class="n">player</span><span class="w"> </span><span class="n">iprintln</span><span class="p">(</span><span class="s">&quot;You has connected&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="preprocessor_directives.html" class="btn btn-neutral float-left" title="Include Directive" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="template.html" class="btn btn-neutral float-right" title="Template" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, LastDemon99, LethalBeats.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

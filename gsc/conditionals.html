@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logical Operators &mdash; IW5 Documentation IW5 Documentation documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+
+  
+    <link rel="canonical" href="https://lastdemon99.github.io/IW5-Documentation/gsc/conditionals.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=05596813"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=f281be69"></script>
+        <script src="../_static/script.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Loops" href="loops.html" />
+    <link rel="prev" title="Math operators" href="math_operators.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IW5 Documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index_gsc.html">GSC</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="how_to_start.html">How to start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="comments.html">Comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables.html">Variable Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables.html#variable-declaration">Variable Declaration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables.html#variable-scopes">Variable Scopes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables.html#persistent-variable">Persistent Variable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_operators.html">Math operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_operators.html#increment-decrement">Increment &amp; decrement</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Logical Operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#if-statements">If Statements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#switch">Switch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loops.html">Loops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions.html">Declaring Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions.html#calling-functions">Calling Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preprocessor_directives.html">Include Directive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preprocessor_directives.html#define-directive">Define Directive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preprocessor_directives.html#undef-directive">Undef Directive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notify_handlers.html">Notify Handlers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="template.html">Template</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../index_modding.html">Modding</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Support:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index_support.html">Contact us</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IW5 Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index_gsc.html">GSC</a></li>
+      <li class="breadcrumb-item active">Logical Operators</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/gsc/conditionals.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="logical-operators">
+<h1>Logical Operators<a class="headerlink" href="#logical-operators" title="Link to this heading"></a></h1>
+<p>Operators used to compare data:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="o">==</span><span class="w"> </span><span class="o">::</span><span class="w"> </span><span class="n">Equal</span><span class="w"> </span><span class="n">To</span>
+<span class="o">!=</span><span class="w"> </span><span class="o">::</span><span class="w"> </span><span class="n">Not</span><span class="w"> </span><span class="n">Equal</span><span class="w"> </span><span class="n">To</span>
+<span class="o">!</span><span class="w">  </span><span class="o">::</span><span class="w"> </span><span class="n">Negation</span><span class="w"> </span><span class="p">(</span><span class="n">Not</span><span class="w"> </span><span class="n">equal</span><span class="w"> </span><span class="n">to</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="w">  </span><span class="o">::</span><span class="w"> </span><span class="n">Less</span><span class="w"> </span><span class="n">than</span>
+<span class="o">&gt;</span><span class="w">  </span><span class="o">::</span><span class="w"> </span><span class="n">Greater</span><span class="w"> </span><span class="n">than</span>
+<span class="o">&lt;=</span><span class="w"> </span><span class="o">::</span><span class="w"> </span><span class="n">Less</span><span class="w"> </span><span class="n">or</span><span class="w"> </span><span class="n">Equal</span><span class="w"> </span><span class="n">to</span>
+<span class="o">&gt;=</span><span class="w"> </span><span class="o">::</span><span class="w"> </span><span class="n">Greater</span><span class="w"> </span><span class="n">or</span><span class="w"> </span><span class="n">Equal</span><span class="w"> </span><span class="n">to</span>
+<span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">::</span><span class="w"> </span><span class="n">And</span>
+<span class="o">||</span><span class="w"> </span><span class="o">::</span><span class="w"> </span><span class="n">Or</span>
+</pre></div>
+</div>
+</section>
+<section id="if-statements">
+<h1>If Statements<a class="headerlink" href="#if-statements" title="Link to this heading"></a></h1>
+<p>An <code class="docutils literal notranslate"><span class="pre">if</span></code> statement is used to verify whether some data satisfies certain conditions, and then to execute code block depending on the outcome.</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="mi">3</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Condition met&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// print a message in killing spree feed</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Condition not met&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>This can also be used to check the conditions of player variables or just variables.</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">self</span><span class="p">.</span><span class="n">condition</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">condition</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// is true?</span>
+<span class="w">    </span><span class="n">self</span><span class="w"> </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;condition is true&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">self</span><span class="w"> </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;condition is false&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>You can also use an <code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">else</span></code> conditions. This is used in a scenario where you want to check multiple comparisons.</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="n">var1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">var2</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// If above arguement is true</span>
+<span class="p">}</span>
+<span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">var1</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">var3</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// If var1 is false but var3 is true</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// If all other if statements were false</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Keep in mind that you will find different ways to write the code, for example, you can see that you can ignore the use of <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">}</span></code>, in case you consider unnecessary and messy only if there is a single line. <cite>remember to check that the indentation is correct</cite></p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">condicion</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// A block with several lines of code</span>
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Condition met&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Condition met&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Condition met&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">condicion</span><span class="p">)</span>
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Condition met&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// one line of code</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">condicion</span><span class="p">)</span>
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Condition met&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// one line of code</span>
+<span class="k">else</span>
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Condition not met&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// one line of code</span>
+
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">condicion</span><span class="p">)</span><span class="w"> </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Condition met&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// one line of code</span>
+<span class="k">else</span><span class="w"> </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Condition not met&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// one line of code</span>
+</pre></div>
+</div>
+<p>In GSC, you can check if a variable is defined as a condition. This function is called isDefined, it takes the variable as the only parameter, and returns <cite>true/false.</cite></p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="n">var2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">isDefined</span><span class="p">(</span><span class="n">var</span><span class="p">))</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// var is defined as 5</span>
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;var is defined&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">var2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">undefined</span><span class="p">;</span><span class="w"> </span><span class="c1">// undefine var2</span>
+<span class="p">}</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">isDefined</span><span class="p">(</span><span class="n">var2</span><span class="p">))</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// this should not be met as var2 was undefined.</span>
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;var2 is defined&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">isDefined</span><span class="p">(</span><span class="n">var2</span><span class="p">))</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;var2 is undefined&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="switch">
+<h1>Switch<a class="headerlink" href="#switch" title="Link to this heading"></a></h1>
+<p>Switch cases are useful for checking the case of a lot of values. This is usually seen to be faster and recommended to use than a if statement.</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+<span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="p">{</span>
+
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
+<span class="w">        </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Value was 1&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
+<span class="w">        </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Value was 2&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
+<span class="w">        </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Value was 3&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">default</span><span class="o">:</span>
+<span class="w">        </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Value was not found&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<ul class="simple">
+<li><p>If you use a <code class="docutils literal notranslate"><span class="pre">switch</span></code> inside a loop, using <code class="docutils literal notranslate"><span class="pre">break</span></code> or <code class="docutils literal notranslate"><span class="pre">return</span></code> will terminate the entire flow, not just the <code class="docutils literal notranslate"><span class="pre">switch</span></code>.</p></li>
+</ul>
+<ul class="simple">
+<li><p>Sometimes the engine does what it wants and ignores the <code class="docutils literal notranslate"><span class="pre">break</span></code> or <code class="docutils literal notranslate"><span class="pre">return</span></code> behavior in a <code class="docutils literal notranslate"><span class="pre">switch</span></code> statement inside loops, just as it can give error in <code class="docutils literal notranslate"><span class="pre">switch</span></code> statement for no apparent reason and you will have to use <code class="docutils literal notranslate"><span class="pre">if</span></code> statements, these behaviors occur rarely and in environments where there is a lot of modularization.</p></li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="math_operators.html" class="btn btn-neutral float-left" title="Math operators" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="loops.html" class="btn btn-neutral float-right" title="Loops" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, LastDemon99, LethalBeats.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

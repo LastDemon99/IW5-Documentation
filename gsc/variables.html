@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Variable Types &mdash; IW5 Documentation IW5 Documentation documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+
+  
+    <link rel="canonical" href="https://lastdemon99.github.io/IW5-Documentation/gsc/variables.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=05596813"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=f281be69"></script>
+        <script src="../_static/script.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Math operators" href="math_operators.html" />
+    <link rel="prev" title="Comments" href="comments.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            IW5 Documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index_gsc.html">GSC</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="how_to_start.html">How to start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="comments.html">Comments</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Variable Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#variable-declaration">Variable Declaration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#variable-scopes">Variable Scopes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#persistent-variable">Persistent Variable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_operators.html">Math operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math_operators.html#increment-decrement">Increment &amp; decrement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conditionals.html">Logical Operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conditionals.html#if-statements">If Statements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conditionals.html#switch">Switch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loops.html">Loops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions.html">Declaring Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions.html#calling-functions">Calling Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preprocessor_directives.html">Include Directive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preprocessor_directives.html#define-directive">Define Directive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preprocessor_directives.html#undef-directive">Undef Directive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notify_handlers.html">Notify Handlers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="template.html">Template</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../index_modding.html">Modding</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Support:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index_support.html">Contact us</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IW5 Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index_gsc.html">GSC</a></li>
+      <li class="breadcrumb-item active">Variable Types</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/gsc/variables.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="variable-types">
+<h1>Variable Types<a class="headerlink" href="#variable-types" title="Link to this heading"></a></h1>
+<p>Variables are used to store data for the duration of the game. They come in various types and can be utilized in different ways:</p>
+<ul class="simple">
+<li><p><strong>Integers:</strong> Store whole numbers, such as <code class="docutils literal notranslate"><span class="pre">1</span></code> , <code class="docutils literal notranslate"><span class="pre">2</span></code> , <code class="docutils literal notranslate"><span class="pre">-5</span></code> , etc.</p></li>
+<li><p><strong>Floats:</strong> Store decimal numbers, such as <code class="docutils literal notranslate"><span class="pre">3.14</span></code> , <code class="docutils literal notranslate"><span class="pre">2.5</span></code> , <code class="docutils literal notranslate"><span class="pre">-0.75</span></code> , etc.</p></li>
+<li><p><strong>Strings:</strong> Store text, such as <code class="docutils literal notranslate"><span class="pre">&quot;hello&quot;</span></code> , <code class="docutils literal notranslate"><span class="pre">&quot;game&quot;</span></code> , <code class="docutils literal notranslate"><span class="pre">&quot;number</span> <span class="pre">one&quot;</span></code> , etc.</p></li>
+<li><p><strong>Booleans:</strong> Represent true/false values, such as <code class="docutils literal notranslate"><span class="pre">true</span></code> or <code class="docutils literal notranslate"><span class="pre">false</span></code> .</p></li>
+<li><p><strong>Arrays:</strong> Structures that store multiple values, e.g., <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">3.5,</span> <span class="pre">&quot;hi&quot;,</span> <span class="pre">true]</span></code> .</p></li>
+<li><p><strong>Associative Arrays:</strong> Structures that store values in an ordered list by means of a key. Internally, the key is converted into a numerical index to access the corresponding element, e.g., <code class="docutils literal notranslate"><span class="pre">Groups[&quot;Admin&quot;]</span></code> , <code class="docutils literal notranslate"><span class="pre">Groups[&quot;Moderator&quot;]</span></code> .</p></li>
+<li><p><strong>Vectors:</strong> Data structures representing an ordered sequence of elements of the same type, arranged in a single dimension. They are used to represent directional magnitudes or quantities with magnitude and direction, e.g., <code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">1)</span></code> .</p></li>
+<li><p><strong>Structs:</strong> Data structures that allow fields of different types to be grouped under the same name, e.g., <code class="docutils literal notranslate"><span class="pre">sentry.health</span></code> .</p></li>
+<li><p><strong>Entities:</strong> Refers to objects within the game environment, such as players and dynamic objects, e.g., <code class="docutils literal notranslate"><span class="pre">player.health</span></code> . While their syntax is similar to structures, entities encompass not only multiple attributes but also behaviors.</p></li>
+</ul>
+</section>
+<section id="variable-declaration">
+<h1>Variable Declaration<a class="headerlink" href="#variable-declaration" title="Link to this heading"></a></h1>
+<p>To declare a variable, simply type the name of the variable followed by an <code class="docutils literal notranslate"><span class="pre">=</span></code> sign to assign the desired value.</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="c1">// int</span>
+
+<span class="n">num_2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.5</span><span class="p">;</span><span class="w"> </span><span class="c1">// float</span>
+
+<span class="n">msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;hello&quot;</span><span class="p">;</span><span class="w"> </span><span class="c1">// string</span>
+
+<span class="n">game_start</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"> </span><span class="c1">// bool</span>
+
+<span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="n">num</span><span class="p">,</span><span class="w"> </span><span class="n">num_2</span><span class="p">,</span><span class="w"> </span><span class="n">msg</span><span class="p">];</span><span class="w"> </span><span class="c1">// array</span>
+
+<span class="n">Groups</span><span class="p">[</span><span class="s">&quot;Admin&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="n">player1</span><span class="p">,</span><span class="w"> </span><span class="n">player2</span><span class="p">,</span><span class="w"> </span><span class="n">player3</span><span class="p">];</span><span class="w"> </span><span class="c1">// associative array</span>
+
+<span class="n">direction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1000</span><span class="p">);</span><span class="w"> </span><span class="c1">// vector</span>
+
+<span class="n">explosion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">spawnStruct</span><span class="p">();</span><span class="w"> </span><span class="c1">// struct</span>
+<span class="n">explosion</span><span class="p">.</span><span class="n">fx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">loadfx</span><span class="p">(</span><span class="s">&quot;explosions/tanker_explosion&quot;</span><span class="p">);</span>
+<span class="n">explosion</span><span class="p">.</span><span class="n">origin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="n">explosion</span><span class="p">.</span><span class="n">sound</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;cobra_helicopter_crash&quot;</span><span class="p">;</span>
+
+<span class="n">entity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">spawnEnt</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;com_plasticcase_friendly&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">));</span><span class="w"> </span><span class="c1">// entity</span>
+<span class="n">entity</span><span class="p">.</span><span class="n">health</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">999</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>When a variable is declared but no value is assigned, its default value is <code class="docutils literal notranslate"><span class="pre">undefined</span></code> , indicating the absence of an assigned value. It can also be explicitly declared as <code class="docutils literal notranslate"><span class="pre">undefined</span></code> .</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">explosion</span><span class="p">.</span><span class="n">health</span><span class="w"> </span><span class="c1">// is undefined; not previously declared</span>
+
+<span class="n">my_var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">undefined</span><span class="p">;</span><span class="w"> </span><span class="c1">// explicitly declared as undefined</span>
+</pre></div>
+</div>
+</section>
+<section id="variable-scopes">
+<h1>Variable Scopes<a class="headerlink" href="#variable-scopes" title="Link to this heading"></a></h1>
+<p><strong>Local Variable:</strong> Variable accessible only within the function where it was declared.</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">exampleFunction</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="c1">// local variable</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>Global Variable:</strong> Variable accessible from any function and from any gsc file.</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">level</span><span class="p">.</span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="c1">// global variable</span>
+</pre></div>
+</div>
+<p><strong>Struct Field:</strong> Variable associated with a specific object and accessible only from that object.</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">self</span><span class="p">.</span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="c1">// struct field</span>
+</pre></div>
+</div>
+</section>
+<section id="persistent-variable">
+<h1>Persistent Variable<a class="headerlink" href="#persistent-variable" title="Link to this heading"></a></h1>
+<p>Variables that do not change with each script initialization you will have to access data structure assigned in the following way <code class="docutils literal notranslate"><span class="pre">self.pers['key']</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">game['key']</span></code></p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">self</span><span class="p">.</span><span class="n">pers</span><span class="p">[</span><span class="s">&quot;num&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="c1">// local entity</span>
+<span class="n">game</span><span class="p">[</span><span class="s">&quot;num&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="c1">// global</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="comments.html" class="btn btn-neutral float-left" title="Comments" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="math_operators.html" class="btn btn-neutral float-right" title="Math operators" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, LastDemon99, LethalBeats.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
