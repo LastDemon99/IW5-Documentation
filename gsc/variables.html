@@ -56,6 +56,7 @@
 <li class="toctree-l2"><a class="reference internal" href="comments.html">Comments</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Variable Types</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#variable-declaration">Variable Declaration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#localized-string">Localized String</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#variable-scopes">Variable Scopes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#persistent-variable">Persistent Variable</a></li>
 <li class="toctree-l2"><a class="reference internal" href="math_operators.html">Math operators</a></li>
@@ -150,6 +151,16 @@
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">explosion</span><span class="p">.</span><span class="n">health</span><span class="w"> </span><span class="c1">// is undefined; not previously declared</span>
 
 <span class="n">my_var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">undefined</span><span class="p">;</span><span class="w"> </span><span class="c1">// explicitly declared as undefined</span>
+</pre></div>
+</div>
+</section>
+<section id="localized-string">
+<h1>Localized String<a class="headerlink" href="#localized-string" title="Link to this heading"></a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> operator is used to interpret a string as a localized string. This is especially useful when you want to reference a localization key and display its associated translation.</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="o">&amp;</span><span class="s">&quot;WEAPON_TROPHY&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Output: Trophy System</span>
 </pre></div>
 </div>
 </section>

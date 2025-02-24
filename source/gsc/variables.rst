@@ -58,6 +58,19 @@ When a variable is declared but no value is assigned, its default value is ``und
 
     my_var = undefined; // explicitly declared as undefined
 
+Localized String
+===============================
+
+The ``&`` operator is used to interpret a string as a localized string. This is especially useful when you want to reference a localization key and display its associated translation.
+
+.. code:: c
+
+    print(&"WEAPON_TROPHY");
+
+.. code:: console
+
+    Output: Trophy System
+
 Variable Scopes
 ===============
 
